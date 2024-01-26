@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone do Google</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: flex-end;  
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+            margin: 15px;
+        }
+        .menu a, .menu div {
+            text-decoration: none;
+            color: black;
+        }
+        .botao {
+            margin-right: 15px;
+        }
+        #opc {
+            display: flex;
+            flex-wrap: wrap;
+            width: 16px;
+            height: 16px;
+        }
+        #barra {
+            width: 3px;
+            height: 3px;
+            margin: 1px;
+            background-color: black;
+        }
+        .foto {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: blue;
+        }
+        .botao:hover {
+            cursor: pointer;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+            margin: auto;
+        }
+        .logo img {
+            max-width: 272px;
+            max-height: 92px;
+            margin-bottom: 30px;
+        }
+        .barra_pesquisa {
+            display: flex;
+            align-items: center;
+            height: 45px;
+            
+            width: 90%;
+            background-color: white;
+            border: 1px solid #9aa0a6;
+            border-radius: 25px;
+            margin-bottom: 20px;
+        }
+        .barra_pesquisa:hover {
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.541);
+            cursor: text;
+        }
+        .logo_pesquisar {
+            color: #9aa0a6;
+
+            position: relative;
+            left: 15px;
+        }
+        .logo_pesquisar img {
+            max-width: 15px;
+            height: auto;
+        }
+        .area_botao_pesquisar {
+            display: flex;
+        }
+        .btn_pesq {
+            display: flex;
+            align-items: center;
+            max-height: 36px;
+            min-width: 100px;
+            padding: 10px 20px;
+            margin-right: 5px;
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .btn_pesq:hover {
+            cursor: pointer;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.541);
+        }
+        .txt {
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        .txt a {
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .txt a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            display: flex;
+            flex-direction: column;
+            background-color: #f8f9fa;
+        }
+        footer #localizacao {
+            padding: 15px 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .rdp {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .about {
+            display: flex;
+            padding-left: 15px;
+        }
+        .about a {
+            margin: 15px 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .privacy {
+            display: flex;
+            padding-right: 15px;
+        }
+        .privacy a {
+            margin: 15px 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        @media (max-width: 600px) {
+            .rdp {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="botao"><a href="#">Gmail</a></div>
+            <div class="botao"><a href="#">Images</a></div>
+            <div id="opc" class="botao">
+                <div id="barra"></div>
+                <div id="barra"></div>
+                <div id="barra"></div>
+                <div id="barra"></div>
+                <div id="barra"></div>
+                <div id="barra"></div>
+                <div id="barra"></div>
+                <div id="barra"></div>
+                <div id="barra"></div>
+            </div>
+            <div class="foto botao"></div>
+        </div>
+    </header>
+    <main>
+        <div class="logo">
+            <img src="google.png" alt="" srcset="">
+        </div>
+        <div class="barra_pesquisa">
+            <div class="logo_pesquisar">
+                <img src="search-interface-symbol.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="area_botao_pesquisar">
+            <div class="btn_pesq">Google Search</div>
+            <div class="btn_pesq">I'm Feeling Lucky</div>
+        </div>
+        <div class="txt">Google offered in: <a href="#">Português (Brasil)</a></div>
+    </main>
+    <footer>
+        <div id="localizacao">Brazil</div>
+        <div class="rdp">
+            <div class="about">
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div class="privacy">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
